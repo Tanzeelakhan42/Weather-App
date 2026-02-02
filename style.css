@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #mainBox {
   height: 100vh;
@@ -11,7 +12,7 @@
   align-items: center;
 }
 #contentBox {
-  height: 70%;
+  height: 80%;
   width: 94%;
   background-color: white;
   border-radius: 26px;
@@ -19,6 +20,72 @@
 }
 #contentBox1 {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#upperSecLeft {
+  height: 60%;
+  width: 100%;
+  /* background-color: plum; */
+}
+#line1 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  padding: 16px 0px;
+}
+#line2 {
+  display: flex;
+  justify-content: center;
+  font-size: 140px;
+  color: #646464;
+}
+#line2Inner {
+  font-size: 14px;
+  padding: 90px 0px 0px 0px;
+}
+#line3 {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  color: #646464;
+  position: relative;
+  right: 36px;
+}
+#lowerSecLeft {
+  height: 40%;
+  width: 100%;
+  /* background-color: blueviolet; */
+}
+#line4 {
+  display: flex;
+  padding: 30px 140px 0px 140px;
+}
+#cardLeft1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  border: 2px solid grey;
+  border-radius: 6px;
+  margin: 4px;
+}
+#cardLeft2,
+#cardLeft3,
+#cardLeft4,
+#cardLeft5,
+#cardLeft6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  margin: 4px;
 }
 #contentBox2 {
   width: 30%;
@@ -26,10 +93,11 @@
   border-radius: 0px 26px 26px 0px;
   padding: 14px;
 }
+
 #upperSecRight {
   width: 100%;
-  height: 55%;
-  background-color: blue;
+  height: 45%;
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,8 +143,8 @@
 }
 #lowerSecRight {
   width: 100%;
-  height: 45%;
-  background-color: pink;
+  height: 55%;
+  /* background-color: pink; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,15 +152,17 @@
 }
 #HourlyUpdateLine1 {
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 8px;
 }
 #HourlyUpdateLine2 {
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 8px;
 }
 #card1,
 #card2,
@@ -109,4 +179,19 @@
   border: 2px solid grey;
   border-radius: 6px;
   margin: 4px;
+}
+.time,
+.day {
+  font-size: 14px;
+  padding: 4px 0px 12px 0px;
+}
+.temperature {
+  font-size: 24px;
+  color: #646464;
+  padding: 0px 0px 16px 0px;
+}
+.weatherType {
+  font-size: 12px;
+  color: #646464;
+  padding: 0px 0px 10px 0px;
 }
