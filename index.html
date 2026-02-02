@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -12,14 +16,20 @@
         <div id="contentBox1">
           <div id="upperSecLeft">
             <div id="line1">
-              <div>Multan</div>
-              <div>21.04.2021</div>
+              <div id="city">Multan</div>
+              <div id="date">21.04.2021</div>
             </div>
             <div id="line2">
-              20
+              20&deg;
               <div id="line2Inner">
-                <div id="line2I">6.1 mph</div>
-                <div id="line2II">90%</div>
+                <div id="line2I">
+                  <i class="wi wi-strong-wind"></i>
+                  <p>6.1 mph</p>
+                </div>
+                <div id="line2II">
+                  <i class="wi wi-humidity"></i>
+                  <p>90%</p>
+                </div>
               </div>
             </div>
             <div id="line3">Cloudy</div>
@@ -28,32 +38,32 @@
             <div id="line4">
               <div id="cardLeft1">
                 <div class="day">Today</div>
-                <div class="temperature">20</div>
+                <div class="temperature">20&deg;</div>
                 <div class="weatherType">Mist</div>
               </div>
               <div id="cardLeft2">
                 <div class="day">Tuesday</div>
-                <div class="temperature">20</div>
+                <div class="temperature">20&deg;</div>
                 <div class="weatherType">Sunny</div>
               </div>
               <div id="cardLeft3">
                 <div class="day">Wednesday</div>
-                <div class="temperature">20</div>
+                <div class="temperature">20&deg;</div>
                 <div class="weatherType">Rainy</div>
               </div>
               <div id="cardLeft4">
                 <div class="day">Thursday</div>
-                <div class="temperature">20</div>
+                <div class="temperature">20&deg;</div>
                 <div class="weatherType">Rainy</div>
               </div>
               <div id="cardLeft5">
                 <div class="day">Friday</div>
-                <div class="temperature">20</div>
+                <div class="temperature">20&deg;</div>
                 <div class="weatherType">Mist</div>
               </div>
               <div id="cardLeft6">
                 <div class="day">Sunday</div>
-                <div class="temperature">20</div>
+                <div class="temperature">20&deg;</div>
                 <div class="weatherType">Mist</div>
               </div>
             </div>
@@ -66,11 +76,17 @@
             <div id="upperSecRightLine3">
               20
               <div id="upperSecRightLine3Inner">
-                <div id="upperSecRightLine3I">6.1 mph</div>
-                <div id="upperSecRightLine3II">90%</div>
+                <div id="upperSecRightLine3I">
+                  <i class="wi wi-strong-wind"></i>
+                  <p>6.1 mph</p>
+                </div>
+                <div id="upperSecRightLine3II">
+                  <i class="wi wi-humidity"></i>
+                  <p>90%</p>
+                </div>
               </div>
             </div>
-            <div id="upperSecRightLine4">Feels like 19</div>
+            <div id="upperSecRightLine4">Feels like 19&deg;</div>
             <div id="upperSecRightLine5">Cloudy</div>
             <div id="upperSecRightLine6">Hourly Forecast</div>
           </div>
@@ -78,24 +94,24 @@
             <div id="HourlyUpdateLine1">
               <div id="card1">
                 <div class="time">1 PM</div>
-                <div class="temperature">20</div>
+                <div class="temperature">20&deg;</div>
                 <div class="weatherType">Cloudy</div>
               </div>
               <div id="card2">
                 <div class="time">2 PM</div>
-                <div class="temperature">21</div>
+                <div class="temperature">21&deg;</div>
                 <div class="weatherType">Rainy</div>
               </div>
               <div id="card3">
                 <div class="time">3 PM</div>
-                <div class="temperature">21</div>
+                <div class="temperature">21&deg;</div>
                 <div class="weatherType">Rainy</div>
               </div>
             </div>
             <div id="HourlyUpdateLine2">
               <div id="card4">
                 <div class="time">4 PM</div>
-                <div class="temperature">20</div>
+                <div class="temperature">20&deg;</div>
                 <div class="weatherType">Cloudy</div>
               </div>
               <div id="card5">
@@ -105,7 +121,7 @@
               </div>
               <div id="card6">
                 <div class="time">6 PM</div>
-                <div class="temperature">21</div>
+                <div class="temperature">21&deg;</div>
                 <div class="weatherType">Rainy</div>
               </div>
             </div>
