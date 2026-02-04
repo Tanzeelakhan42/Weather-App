@@ -51,10 +51,6 @@ const getData = async () => {
   windSpeedRight.innerText = data.current.wind_mph + " mph";
   humidityRight.innerText = data.current.humidity + " %";
   feelsLike.innerText = "Feels like " + data.current.feelslike_c + "°";
-
-  const currentHour = dateObj.getHours();
-  console.log(currentHour);
-
   time1Temp.innerText = data.forecast.forecastday[0].hour[13].temp_c + "°";
   time2Temp.innerText = data.forecast.forecastday[0].hour[14].temp_c + "°";
   time3Temp.innerText = data.forecast.forecastday[0].hour[15].temp_c + "°";
