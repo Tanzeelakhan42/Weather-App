@@ -31,7 +31,7 @@ const getData = async () => {
   console.log(data);
   city.innerText = data.location.name;
   date.innerText = data.forecast.forecastday[0].date;
-  temp.innerText = data.current.temp_c;
+  temp.innerText = data.current.temp_c + "°";
   windSpeed.innerText = data.current.wind_mph + " mph";
   humidity.innerText = data.current.humidity + " %";
 
@@ -47,17 +47,20 @@ const getData = async () => {
     greeting.innerText = "Good Night";
   }
   timeRight.innerText = data.forecast.forecastday[0].date;
-  tempRight.innerText = data.current.temp_c;
+  tempRight.innerText = data.current.temp_c + "°";
   windSpeedRight.innerText = data.current.wind_mph + " mph";
   humidityRight.innerText = data.current.humidity + " %";
-  feelsLike.innerText = "Feels like " + data.current.feelslike_c;
+  feelsLike.innerText = "Feels like " + data.current.feelslike_c + "°";
 
-  time1Temp.innerText = data.forecast.forecastday[0].hour[13].temp_c;
-  time2Temp.innerText = data.forecast.forecastday[0].hour[14].temp_c;
-  time3Temp.innerText = data.forecast.forecastday[0].hour[15].temp_c;
-  time4Temp.innerText = data.forecast.forecastday[0].hour[16].temp_c;
-  time5Temp.innerText = data.forecast.forecastday[0].hour[17].temp_c;
-  time6Temp.innerText = data.forecast.forecastday[0].hour[18].temp_c;
+  const currentHour = dateObj.getHours();
+  console.log(currentHour);
+
+  time1Temp.innerText = data.forecast.forecastday[0].hour[13].temp_c + "°";
+  time2Temp.innerText = data.forecast.forecastday[0].hour[14].temp_c + "°";
+  time3Temp.innerText = data.forecast.forecastday[0].hour[15].temp_c + "°";
+  time4Temp.innerText = data.forecast.forecastday[0].hour[16].temp_c + "°";
+  time5Temp.innerText = data.forecast.forecastday[0].hour[17].temp_c + "°";
+  time6Temp.innerText = data.forecast.forecastday[0].hour[18].temp_c + "°";
   time1Condition.innerText =
     data.forecast.forecastday[0].hour[13].condition.text;
   time2Condition.innerText =
